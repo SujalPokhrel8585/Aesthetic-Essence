@@ -49,13 +49,16 @@ export function Footer({
               aria-label={logo.alt}
             >
               <img
-                src="/favicon.png"
+                src="/logo.webp"
                 alt=""
-                className="size-11 object-contain"
+                className="size-11 rounded-lg object-contain"
               />
               <span className="flex flex-col leading-none">
                 <span className="text-xl font-extrabold tracking-wide text-foreground">
-                  ae
+                  Aesthetic
+                </span>
+                <span className="text-xl font-extrabold tracking-wide text-foreground">
+                  Essence
                 </span>
                 <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Skin &amp; Hair Clinic

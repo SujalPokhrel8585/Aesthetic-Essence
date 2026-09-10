@@ -30,7 +30,7 @@ export default function DoctorsPage() {
 
           <p className="text-base leading-relaxed font-normal text-muted-foreground sm:text-lg">
             NMC-registered dermatologists dedicated to your skin and hair
-            health, from medical care to advanced hair restoration.
+            health, from medical care to advanced aesthetic treatments.
           </p>
         </div>
 

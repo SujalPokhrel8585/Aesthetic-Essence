@@ -14,12 +14,12 @@ export interface WhyChooseUsPoint {
 export const WHY_CHOOSE_US_POINTS: WhyChooseUsPoint[] = [
   {
     icon: Activity,
-    title: "Advanced Hair Transplants",
-    tagline: "Precision Follicular Extraction & Natural Density",
+    title: "Regenerative PRP & GFC Therapy",
+    tagline: "Natural Growth Factors for Hair & Skin",
     description:
-      "Our surgical hair restoration protocols are guided by our specialist surgical team using minimally invasive FUE techniques. We focus on careful hairline design, graft survival, and attentive aftercare to support natural-looking, long-lasting density.",
-    badge: "Surgical Excellence",
-    badgeColor: "bg-accent text-accent-foreground border-teal-500/60",
+      "Our regenerative protocols use your own platelet-rich plasma and growth factor concentrate to stimulate hair follicles, slow hair loss and rejuvenate facial skin — a safe, natural option guided by our dermatologists with attentive aftercare.",
+    badge: "Regenerative Care",
+    badgeColor: "bg-accent text-accent-foreground border-border",
   },
   {
     icon: Sparkles,
@@ -28,7 +28,7 @@ export const WHY_CHOOSE_US_POINTS: WhyChooseUsPoint[] = [
     description:
       "Using authentic patented vortex-fusion technology, our medical hydrafacial treatments deep-cleanse congested pores, extract stubborn impurities, and infuse medical-grade peptides and antioxidants. Experience instantaneous hydration, smoothed texture, and radiant skin with zero downtime.",
     badge: "Clinical Aesthetics",
-    badgeColor: "bg-primary/10 text-primary border-primary/20/60",
+    badgeColor: "bg-primary/10 text-primary border-primary/20",
   },
   {
     icon: ShieldCheck,
@@ -37,7 +37,7 @@ export const WHY_CHOOSE_US_POINTS: WhyChooseUsPoint[] = [
     description:
       "No two skin types are identical. We create tailored clinical pathways combining prescription topical regimens, chemical peels, subcision, and fractional laser resurfacing to clear active breakouts and repair deep atrophic acne scars at the root dermal layer.",
     badge: "Evidence-Based",
-    badgeColor: "bg-primary/10 text-primary border-primary/20/60",
+    badgeColor: "bg-primary/10 text-primary border-primary/20",
   },
   {
     icon: Award,
@@ -46,6 +46,6 @@ export const WHY_CHOOSE_US_POINTS: WhyChooseUsPoint[] = [
     description:
       "Our anti-aging therapies prioritize delicate facial balance that honors your unique bone structure. Using US-FDA approved neuromodulators and premium dermal fillers, we soften fine lines, restore lost volume, and lift facial contours while preserving natural emotional expressions.",
     badge: "FDA-Approved Protocols",
-    badgeColor: "bg-cyan-50 text-cyan-700 border-cyan-200/60",
+    badgeColor: "bg-primary/10 text-primary border-primary/20",
   },
 ];

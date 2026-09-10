@@ -2,17 +2,11 @@ import { Plus } from "lucide-react";
 
 import { BeforeAfterSlider } from "./BeforeAfterSlider";
 
-import before from "/results/hair-transplant-before.webp";
-import after from "/results/hair-transplant-after.webp";
-import before400 from "/results/hair-transplant-before-400w.webp";
-import before800 from "/results/hair-transplant-before-800w.webp";
-import before1200 from "/results/hair-transplant-before-1200w.webp";
-import after400 from "/results/hair-transplant-after-400w.webp";
-import after800 from "/results/hair-transplant-after-800w.webp";
-import after1200 from "/results/hair-transplant-after-1200w.webp";
-
-const beforeSrcset = `${before400} 400w, ${before800} 800w, ${before1200} 1200w`;
-const afterSrcset = `${after400} 400w, ${after800} 800w, ${after1200} 1200w`;
+// Dermatology treatment progress photos (Unsplash, free stock)
+const before =
+  "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop";
+const after =
+  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=800&auto=format&fit=crop";
 
 export const BeforeAfter = () => {
   return (
@@ -33,10 +27,8 @@ export const BeforeAfter = () => {
           <BeforeAfterSlider
             beforeSrc={before}
             afterSrc={after}
-            beforeSrcset={beforeSrcset}
-            afterSrcset={afterSrcset}
-            beforeAlt="Patient hairline before hair transplant at AestheticEssence Clinic"
-            afterAlt="Patient hairline after hair transplant at AestheticEssence Clinic"
+            beforeAlt="Skin before dermatology treatment at AestheticEssence Clinic"
+            afterAlt="Skin after dermatology treatment at AestheticEssence Clinic"
             className="aspect-3/4 sm:aspect-3/4 mx-auto w-full max-w-md"
           />
         </div>

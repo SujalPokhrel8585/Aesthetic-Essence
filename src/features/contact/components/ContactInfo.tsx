@@ -12,7 +12,7 @@ export function ContactInfo() {
 
         <div className="space-y-6">
           <div className="flex items-start gap-4">
-            <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20/60 shadow-xs">
+            <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20 shadow-xs">
               <MapPin className="size-5" />
             </div>
             <div>
@@ -34,7 +34,7 @@ export function ContactInfo() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="size-11 rounded-2xl bg-accent text-accent-foreground flex items-center justify-center shrink-0 border border-teal-500/60 shadow-xs">
+            <div className="size-11 rounded-2xl bg-accent text-accent-foreground flex items-center justify-center shrink-0 border border-border shadow-xs">
               <Phone className="size-5" />
             </div>
             <div>
@@ -51,7 +51,7 @@ export function ContactInfo() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20/60 shadow-xs">
+            <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20 shadow-xs">
               <MessageCircle className="size-5" />
             </div>
             <div>
@@ -70,7 +70,7 @@ export function ContactInfo() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="size-11 rounded-2xl bg-cyan-50 text-cyan-700 flex items-center justify-center shrink-0 border border-cyan-100/60 shadow-xs">
+            <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20 shadow-xs">
               <Clock className="size-5" />
             </div>
             <div>

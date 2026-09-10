@@ -257,7 +257,7 @@ export default function BookAppointmentPage() {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20/60 shadow-xs">
+                    <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20 shadow-xs">
                       <Stethoscope className="size-5" />
                     </div>
                     <div>
@@ -271,7 +271,7 @@ export default function BookAppointmentPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20/60 shadow-xs">
+                    <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20 shadow-xs">
                       <Phone className="size-5" />
                     </div>
                     <div>
@@ -285,7 +285,7 @@ export default function BookAppointmentPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="size-11 rounded-2xl bg-accent text-accent-foreground flex items-center justify-center shrink-0 border border-teal-500/60 shadow-xs">
+                    <div className="size-11 rounded-2xl bg-accent text-accent-foreground flex items-center justify-center shrink-0 border border-border shadow-xs">
                       <Calendar className="size-5" />
                     </div>
                     <div>
@@ -293,13 +293,13 @@ export default function BookAppointmentPage() {
                         3. Visit us
                       </h3>
                       <p className="text-xs sm:text-sm text-muted-foreground">
-                        Samakhushi, Kathmandu, Nepal
+                        City Square Mall (3rd Floor), Samakhushi Road, Kathmandu, Nepal
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="size-11 rounded-2xl bg-cyan-50 text-cyan-700 flex items-center justify-center shrink-0 border border-cyan-100/60 shadow-xs">
+                    <div className="size-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20 shadow-xs">
                       <Clock className="size-5" />
                     </div>
                     <div>
@@ -319,10 +319,10 @@ export default function BookAppointmentPage() {
                   Prefer to call?
                 </span>
                 <a
-                  href="tel:9765974518"
+                  href="tel:9767648659"
                   className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 >
-                  +977 9765974518
+                  +977 976-7648659 · 01-4978659
                 </a>
               </div>
             </div>

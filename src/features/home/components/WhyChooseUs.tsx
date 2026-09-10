@@ -12,11 +12,7 @@ import { CLINIC_INFO } from "@/constants";
 const STATS = [
   { icon: Clock, value: "10+ Years", label: "Clinical Experience" },
   { icon: Users, value: "100+", label: "Patients Treated" },
-  {
-    icon: Award,
-    value: "Advanced",
-    label: "Dermatology & Hair Transplant Expert",
-  },
+  { icon: Award, value: "2", label: "Specialist Dermatologists" },
 ];
 
 export default function WhyChooseUs() {
@@ -39,47 +35,69 @@ export default function WhyChooseUs() {
 
         {/* Main Grid: Doctor Profile + Proof of Results */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Doctor Bio Card (Authority Builder) */}
+          {/* Doctor Bio Card (Authority Builder) — both dermatologists */}
           <div className="lg:col-span-7 bg-card rounded-3xl p-8 shadow-sm border border-border flex flex-col justify-between">
             <div>
-              <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-6">
-                <div className="relative w-28 h-28 rounded-2xl overflow-hidden bg-muted shrink-0 shadow-inner">
-                  <img
-                    src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400&auto=format&fit=crop"
-                    alt="Dr. Saroj Karki"
-                    className="w-full h-full object-cover"
-                  />
+              <span className="text-xs font-semibold text-accent-foreground uppercase tracking-wider">
+                Consultant Dermatologists
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start mt-4 mb-6">
+                <div className="flex items-start gap-4">
+                  <div className="relative w-20 h-20 rounded-2xl overflow-hidden bg-muted shrink-0 shadow-inner">
+                    <img
+                      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop"
+                      alt="Dr. Shraddha Chudal"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">
+                      Dr. Shraddha Chudal
+                    </h3>
+                    <p className="text-xs text-muted-foreground">
+                      MBBS, MD (Dermatology & Venereology)
+                    </p>
+                    <div className="mt-1.5 flex items-center gap-1.5 text-xs text-muted-foreground">
+                      <ShieldCheck className="h-4 w-4 text-accent-foreground" />
+                      <span>NMC Registered Specialist</span>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-xs font-semibold text-accent-foreground uppercase tracking-wider">
-                    Lead Dermatologist
-                  </span>
-                  <h3 className="text-2xl font-bold text-foreground">
-                    Dr. Saroj Karki
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    MBBS, MD (Dermatology & Venereology)
-                  </p>
-                  <div className="mt-2 flex items-center gap-1.5 text-xs text-muted-foreground">
-                    <ShieldCheck className="h-4 w-4 text-accent-foreground" />
-                    <span>NMC Registered Specialist</span>
+                <div className="flex items-start gap-4">
+                  <div className="relative w-20 h-20 rounded-2xl overflow-hidden bg-muted shrink-0 shadow-inner">
+                    <img
+                      src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop"
+                      alt="Dr. Pramesh Koirala"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">
+                      Dr. Pramesh Koirala
+                    </h3>
+                    <p className="text-xs text-muted-foreground">
+                      MBBS, MD (Dermatology & Venereology)
+                    </p>
+                    <div className="mt-1.5 flex items-center gap-1.5 text-xs text-muted-foreground">
+                      <ShieldCheck className="h-4 w-4 text-accent-foreground" />
+                      <span>NMC Registered Specialist</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Dr. Saroj Karki is a recognized expert in advanced medical
-                dermatology, trichology, and surgical hair restoration.
-                Dedicated to evidence-based skincare, acne management, and
-                complex conditions like Lichen Planopilaris and Melasma
-                management.
+                Dr. Shraddha Chudal and Dr. Pramesh Koirala are our consultant
+                dermatologists for medical and cosmetic dermatology — from acne
+                and pigmentation care to HydraFacial, chemical peels, PRP & GFC
+                therapy, and anti-aging treatments tailored to Nepali skin.
               </p>
 
               {/* Highlights Checklist */}
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-sm text-foreground">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-foreground shrink-0" />
-                  <span>Advanced Hair Transplants</span>
+                  <span>Regenerative PRP & GFC Therapy</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-foreground shrink-0" />
@@ -91,7 +109,7 @@ export default function WhyChooseUs() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-foreground shrink-0" />
-                  <span>Anti-Aging & Botox Treatments</span>
+                  <span>Pigmentation & Anti-Aging Care</span>
                 </li>
               </ul>
             </div>
@@ -115,39 +133,39 @@ export default function WhyChooseUs() {
             </div>
           </div>
 
-          {/* Results / Case Study Card (Proof of Results) */}
-          <div className="lg:col-span-5 bg-gray-900 text-white rounded-3xl p-8 shadow-sm flex flex-col justify-between relative overflow-hidden border border-teal-500/40">
+          {/* Patient Story Card (Proof of Results) */}
+          <div className="lg:col-span-5 bg-card text-card-foreground rounded-3xl p-8 shadow-sm flex flex-col justify-between relative overflow-hidden border border-primary/40">
             {/* Decorative background glow */}
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
             <div>
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <span className="text-xs font-semibold text-teal-400 uppercase tracking-wider">
-                    Clinical Case Study
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                    Patient Stories
                   </span>
                   <h3 className="text-xl font-bold mt-1">
-                    Lichen Planopilaris Care
+                    Acne & Pigmentation Care
                   </h3>
                 </div>
-                <span className="bg-white/10 text-teal-300 text-xs px-2.5 py-1 rounded-full font-medium">
+                <span className="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-full font-medium">
                   Real Results
                 </span>
               </div>
 
-              <div className="relative rounded-2xl overflow-hidden bg-gray-800 aspect-video mb-6 border border-white/10">
+              <div className="relative rounded-2xl overflow-hidden bg-muted aspect-video mb-6 border border-border">
                 <img
-                  src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=600&auto=format&fit=crop"
-                  alt="Before and after clinical results"
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=600&auto=format&fit=crop"
+                  alt="Glowing skin after dermatology treatment"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                Documented case tracking a patient with scarring alopecia.
-                Following personalized anti-inflammatory regimens and targeted
-                clinical procedures under Dr. Karki, stable remission and
-                noticeable regrowth were achieved.
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                Our patients come to us for stubborn acne, melasma and hair
+                fall. With careful diagnosis and multi-session plans designed
+                by our dermatologists, clearer skin and visible steady
+                improvement follow.
               </p>
             </div>
 
@@ -155,9 +173,9 @@ export default function WhyChooseUs() {
               href={CLINIC_INFO.socials.maps}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-between w-full rounded-full bg-white text-gray-900 px-6 py-3 text-sm font-medium transition-colors hover:bg-gray-100"
+              className="inline-flex items-center justify-between w-full rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium transition-colors hover:bg-primary/90"
             >
-              <span>Book Consultation with Dr. Karki</span>
+              <span>Book Consultation with Our Doctors</span>
               <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>

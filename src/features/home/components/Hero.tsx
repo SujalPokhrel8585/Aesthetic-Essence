@@ -96,7 +96,7 @@ export default function Hero() {
               <p className="mb-4 max-w-[520px] text-lg font-normal leading-relaxed text-muted-foreground">
                 Reveal, renew, rejuvenate. Your trusted destination for
                 advanced dermatology, HydraFacial, acne treatments, melasma
-                care, anti-aging Botox, and advanced hair transplants.
+                care, anti-aging Botox, and regenerative PRP & GFC hair care.
               </p>
 
               {/* Action Buttons – now using Link */}
@@ -166,7 +166,7 @@ export default function Hero() {
             {/* Hero Visual & 3D Canvas */}
             <div className="hero-visual">
               {/* Background Glow Circles */}
-              <div className="circle circle-teal" />
+              <div className="circle circle-gold" />
               <div className="circle circle-orange" />
               <div className="circle circle-yellow" />
               <div className="circle circle-green" />
@@ -197,10 +197,10 @@ export default function Hero() {
                       <Calendar className="size-4.5" />
                     </div>
                     <div>
-                      <p className="mb-0 text-sm font-bold text-[#134e4a]">
+                      <p className="mb-0 text-sm font-bold text-[#1e3a5f]">
                         Book Online
                       </p>
-                      <small className="text-[11px] font-bold text-[#1f7e79]">
+                      <small className="text-[11px] font-bold text-[#a8841c]">
                         Schedule your visit
                       </small>
                     </div>
@@ -215,19 +215,19 @@ export default function Hero() {
                     <div>
                       {status.open ? (
                         <>
-                          <p className="mb-0 text-sm font-bold text-[#134e4a]">
+                          <p className="mb-0 text-sm font-bold text-[#1e3a5f]">
                             Closes at {formatHour12(CLINIC_CLOSE_HOUR)}
                           </p>
-                          <small className="text-[11px] font-bold text-[#1f7e79]">
+                          <small className="text-[11px] font-bold text-[#a8841c]">
                             {formatDuration(status.closesInMinutes ?? 0)} left
                           </small>
                         </>
                       ) : (
                         <>
-                          <p className="mb-0 text-sm font-bold text-[#134e4a]">
+                          <p className="mb-0 text-sm font-bold text-[#1e3a5f]">
                             Opens at {formatHour12(CLINIC_OPEN_HOUR)}
                           </p>
-                          <small className="text-[11px] font-bold text-[#1f7e79]">
+                          <small className="text-[11px] font-bold text-[#a8841c]">
                             reopens in {formatDuration(status.opensInMinutes ?? 0)}
                           </small>
                         </>

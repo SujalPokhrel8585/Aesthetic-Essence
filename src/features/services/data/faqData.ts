@@ -39,29 +39,6 @@ export const FAQ_DATA: FaqDataMap = {
     },
   ],
 
-  "hair-transplant": [
-    {
-      question: "How is the cost of a hair transplant calculated in Nepal",
-      answer:
-        "Reputable clinics in Kathmandu price the procedure per graft rather than as a flat fee, generally in the range of NPR 35 to NPR 90 per graft depending on the technique used. Your final cost depends on how many grafts your donor area can support, which is confirmed during a scalp assessment.",
-    },
-    {
-      question: "How long does the procedure take and is there downtime",
-      answer:
-        "A full session usually takes between four and eight hours depending on graft count. Most patients return to light daily activities within three to five days, though strenuous exercise and direct sun exposure should be avoided for a couple of weeks.",
-    },
-    {
-      question: "Will the transplanted hair look natural",
-      answer:
-        "Yes, Dr Saroj Karki designs the hairline to match your natural growth pattern and face shape, and the extraction technique preserves individual follicular units so new growth blends with your existing hair.",
-    },
-    {
-      question: "Can a hair transplant be combined with PRP therapy",
-      answer:
-        "Many patients in Nepal pair PRP or growth factor sessions with their transplant to strengthen existing hair and support graft survival, particularly when hair loss is still in its early stages.",
-    },
-  ],
-
   "laser-hair-removal": [
     {
       question:
@@ -293,29 +270,6 @@ export const FAQ_DATA: FaqDataMap = {
     },
   ],
 
-  "cosmetic-surgery": [
-    {
-      question: "What cosmetic surgical procedures are offered",
-      answer:
-        "Our surgical team performs a range of aesthetic procedures aimed at lasting changes to facial or body contour, planned individually after a detailed consultation to understand your goals and assess suitability.",
-    },
-    {
-      question: "How is recovery managed after surgery in Kathmandu",
-      answer:
-        "You receive a structured aftercare plan covering wound care, activity restrictions and follow up visits, with our team available for questions throughout your healing period.",
-    },
-    {
-      question: "How do I know if I am a good candidate",
-      answer:
-        "A thorough consultation with our surgeon evaluates your health history, skin condition and expectations to confirm whether a surgical or a less invasive option would serve your goals better.",
-    },
-    {
-      question: "Is cosmetic surgery safe when performed in Nepal",
-      answer:
-        "Yes, when performed by qualified, experienced surgeons in a properly equipped clinical setting, cosmetic procedures carried out in Kathmandu follow the same safety standards expected internationally, and your surgeon will walk through the risks specific to your procedure beforehand.",
-    },
-  ],
-
   "skin-hair-nail": [
     {
       question:
@@ -340,6 +294,186 @@ export const FAQ_DATA: FaqDataMap = {
     },
   ],
 
+  "doctor-consultation": [
+    {
+      question: "What should I bring to a consultation",
+      answer:
+        "Bring any previous test reports, prescriptions and a list of products or medications you currently use. The dermatologist will review your concerns, examine your skin or scalp and explain the likely causes before recommending tests or treatment.",
+    },
+    {
+      question: "Do I need a consultation before a treatment",
+      answer:
+        "Yes, every procedure — from laser and peels to Botox and PRP — starts with a consultation so the dermatologist can confirm the right fit for your skin type and goals, and screen for any reason to avoid the treatment.",
+    },
+    {
+      question: "How long is a typical consultation in Kathmandu",
+      answer:
+        "A standard consultation takes around fifteen to thirty minutes, and complex conditions such as melasma, vitiligo or hair loss may need a longer first visit so the doctor can examine everything thoroughly.",
+    },
+  ],
+
+  "scar-revision": [
+    {
+      question: "Which scars can be treated with scar revision",
+      answer:
+        "Acne scars, surgical scars, burn scars and old injury scars all respond well. The choice of tool — laser, microneedling, subcision or injections — depends on whether the scar is shallow, deep, raised, or darkened.",
+    },
+    {
+      question: "How many sessions does scar revision need",
+      answer:
+        "Most patients need three to six sessions spaced four to eight weeks apart. Results build gradually as collagen remodels, so patience and consistent follow-up are part of the plan.",
+    },
+    {
+      question: "Can raised keloid scars be flattened",
+      answer:
+        "Yes, intralesional injections and fractional laser help flatten and soften raised or keloid scars over several sessions, with a treatment plan tailored to how long the scar has been present.",
+    },
+  ],
+
+  "thread-lifting": [
+    {
+      question: "How long do thread lift results last",
+      answer:
+        "The immediate lift is visible right away and typically lasts twelve to eighteen months, while the collagen stimulated around the threads continues to firm the skin for several months longer.",
+    },
+    {
+      question: "Is a thread lift painful or risky",
+      answer:
+        "Local anaesthetic keeps the procedure comfortable, and downtime is short with mild swelling or bruising for a few days. Choosing an experienced dermatologist minimises any risk of visible threads or dimpling.",
+    },
+    {
+      question: "Who is a good candidate for a thread lift",
+      answer:
+        "Patients in their early thirties to fifties with mild to moderate sagging of the cheeks, jawline or brows see the most natural results. Advanced sagging may still be better served by surgical options discussed in consultation.",
+    },
+  ],
+
+  "mesoinjections": [
+    {
+      question: "What is injected during mesotherapy",
+      answer:
+        "A cocktail of hyaluronic acid, vitamins, minerals and amino acids is micro-injected into the skin to hydrate and nourish it, and on the scalp it helps strengthen hair roots and reduce thinning.",
+    },
+    {
+      question: "How many mesoinjection sessions are needed",
+      answer:
+        "A typical course is four to six sessions spaced two weeks apart with maintenance every few months, depending on your skin's hydration levels and the concern being treated.",
+    },
+    {
+      question: "When will I notice results",
+      answer:
+        "Many patients notice extra glow and hydration after the first session, while texture and firmness improvements build over the full course of four to six treatments.",
+    },
+  ],
+
+  "mole-skin-tag-wart-removal": [
+    {
+      question: "Is it safe to remove moles and skin tags",
+      answer:
+        "Yes, when each lesion is first examined by a dermatologist to confirm it is benign. Suspicious or changing lesions are checked carefully before any removal, and samples can be sent for testing if needed.",
+    },
+    {
+      question: "Does removal leave a scar",
+      answer:
+        "Laser and radiofrequency removal of small lesions heals with minimal to no visible scarring. Surgical removal of larger moles may leave a small linear scar, which our dermatologist will explain beforehand.",
+    },
+    {
+      question: "Do warts come back after treatment",
+      answer:
+        "Viral warts can recur because HPV may remain in nearby skin, so we often combine removal with a short topical course and check on the area at a follow-up visit to reduce the chance of regrowth.",
+    },
+  ],
+
+  "vitiligo-treatment": [
+    {
+      question: "Can vitiligo really be repigmented",
+      answer:
+        "Yes, modern therapies can restore pigment in many cases, especially when started early. Phototherapy, excimer laser and topical protocols help melanocytes return colour to white patches over months of consistent treatment.",
+    },
+    {
+      question: "How long does vitiligo treatment take",
+      answer:
+        "Repigmentation is gradual — most patients see the first specks of colour after two to three months, with meaningful coverage building over six to twelve months of regular sessions.",
+    },
+    {
+      question: "Is phototherapy safe for skin in Nepal's climate",
+      answer:
+        "Yes, narrow-band UVB phototherapy is carefully dosed and the doctor will adjust exposure especially given Nepal's strong high-altitude sun, to maximise repigmentation while protecting surrounding skin.",
+    },
+  ],
+
+  "tattoo-removal": [
+    {
+      question: "How many sessions does tattoo removal take",
+      answer:
+        "Most tattoos need six to twelve laser sessions spaced six to eight weeks apart. Professional multi-colour tattoos and very dense ink typically take longer than amateur or black-only work.",
+    },
+    {
+      question: "Are tattoos fully removed or just faded",
+      answer:
+        "Most tattoos fade significantly and many can be removed almost completely, though a faint shadow can remain on some inks. A realistic plan and expected outcome is confirmed during your consultation.",
+    },
+    {
+      question: "Is laser tattoo removal safe on darker skin",
+      answer:
+        "Using long-pulse Q-Switched and picosecond lasers with conservative settings makes the treatment safe for the medium-to-deep skin tones common in Nepal, minimising the risk of hypopigmentation.",
+    },
+  ],
+
+  "intralesional-injections": [
+    {
+      question: "What conditions are treated with intralesional injections",
+      answer:
+        "Keloids, hypertrophic scars, cysts, persistent warts and localised inflammatory conditions are treated by injecting medication directly into the lesion, giving a concentrated effect right where it is needed.",
+    },
+    {
+      question: "How many injection sessions are required",
+      answer:
+        "Raised scars and keloids usually need four to eight sessions spaced three to four weeks apart, while warts may clear in fewer visits depending on how thick and long standing they are.",
+    },
+    {
+      question: "Are intralesional injections painful",
+      answer:
+        "A fine needle is used and most patients feel only brief stinging. Numbing cream can be applied beforehand if a sensitive area is being treated.",
+    },
+  ],
+
+  "skin-anti-aging": [
+    {
+      question: "At what age should I start anti-aging skincare",
+      answer:
+        "Prevention can start in the mid-to-late twenties with sunscreen, moisturiser and gentle retinoids, while combined in-clinic programmes such as peels, microneedling and mesotherapy suit the thirties and beyond.",
+    },
+    {
+      question: "Which anti-aging treatment is right for me",
+      answer:
+        "That depends on whether fine lines, sagging, dullness or pigmentation bother you most. During a consultation the dermatologist will combine the right clinic procedures with a home skincare plan for the best result.",
+    },
+    {
+      question: "Will I look frozen or unnatural",
+      answer:
+        "No. Treatments like Botox and fillers are dosed conservatively to soften lines while preserving natural expressions, and the rest of the anti-aging programme restores a refreshed rather than artificial appearance.",
+    },
+  ],
+
+  "sti-treatment": [
+    {
+      question: "Is STI consultation confidential",
+      answer:
+        "Completely. Your consultation, tests and records are kept private, and you can speak openly with our dermatologist who sees these conditions regularly and treats them without judgement.",
+    },
+    {
+      question: "Which STI symptoms should I get checked for",
+      answer:
+        "Warts or bumps on the genitals, unusual discharge, sores, burning while urinating and itching all warrant a check-up. Early diagnosis makes treatment simpler and reduces risk to partners.",
+    },
+    {
+      question: "Can STIs be cured completely",
+      answer:
+        "Many bacterial STIs are fully cured with a short course of medication, and viral STIs such as herpes and warts can be effectively controlled and kept from spreading with ongoing care.",
+    },
+  ],
+
   prp: [
     {
       question: "How does PRP help with hair loss",
@@ -352,9 +486,9 @@ export const FAQ_DATA: FaqDataMap = {
         "Most patients undergo an initial course of four to six sessions spaced three to four weeks apart, followed by maintenance sessions every four to six months to sustain results.",
     },
     {
-      question: "Can PRP be combined with a hair transplant",
+      question: "What is the difference between PRP and GFC",
       answer:
-        "Yes, PRP is commonly combined with hair transplant surgery in Nepal, either to support graft survival after the procedure or to strengthen surrounding native hair for a fuller overall result.",
+        "Both use growth factors drawn from your own blood, but GFC concentrates them more highly in a purer solution, so some clinics in Kathmandu recommend GFC for advanced hair thinning while PRP suits general regenerative care for the scalp and face.",
     },
     {
       question: "Is there any downtime after a PRP session",

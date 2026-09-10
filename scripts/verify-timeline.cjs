@@ -43,7 +43,7 @@ async function runScenario(browser, { name, theme, viewport, mobile }) {
     ...(mobile ? { isMobile: true, hasTouch: true, deviceScaleFactor: 2 } : {}),
   });
   await ctx.addInitScript(
-    (t) => localStorage.setItem("lotus-theme", t),
+    (t) => localStorage.setItem("ae-theme", t),
     theme,
   );
   const page = await ctx.newPage();

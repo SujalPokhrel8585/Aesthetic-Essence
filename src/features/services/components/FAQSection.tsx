@@ -32,7 +32,7 @@ export default function FAQSection({ serviceId }: FAQSectionProps) {
       className="mb-14"
     >
       <div className="flex items-center gap-2 mb-6">
-        <div className="size-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center border border-primary/20/60 shrink-0">
+        <div className="size-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center border border-primary/20 shrink-0">
           <HelpCircle className="size-4.5" />
         </div>
         <h2 className="text-xl sm:text-2xl font-bold text-foreground">

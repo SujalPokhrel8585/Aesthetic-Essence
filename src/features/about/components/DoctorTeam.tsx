@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Users, ArrowRight, ArrowUpRight } from "lucide-react";
+import { Users, ArrowRight, ArrowUpRight, AtSign } from "lucide-react";
 import { DOCTOR_TEAM } from "@/features/about/data/index";
 
 export default function DoctorTeam() {
@@ -15,8 +15,8 @@ export default function DoctorTeam() {
             Led by NMC-Registered Specialists
           </h2>
           <p className="mt-2 text-sm sm:text-base text-muted-foreground max-w-xl">
-            Consultant dermatologists and hair restoration surgeons
-            collaborating for your complete skin and hair care.
+            Consultant dermatologists collaborating for your complete skin and
+            hair care.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function DoctorTeam() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
         {DOCTOR_TEAM.map((doctor, idx) => (
           <div
             key={idx}
@@ -45,7 +45,7 @@ export default function DoctorTeam() {
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
-                  <div className="flex w-full h-full items-center justify-center bg-gradient-to-br from-primary to-[#2e9e97]">
+                  <div className="flex w-full h-full items-center justify-center bg-gradient-to-br from-primary to-[#7a5c0a]">
                     <span className="text-5xl font-bold tracking-wide text-white">
                       {doctor.name
                         .replace("Dr. ", "")
@@ -61,6 +61,17 @@ export default function DoctorTeam() {
                     {doctor.reg}
                   </span>
                 </div>
+                {doctor.instagram && (
+                  <a
+                    href={doctor.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${doctor.name} on Instagram`}
+                    className="absolute top-3 right-3 size-8 rounded-full bg-card/95 border border-border text-foreground flex items-center justify-center shadow-xs hover:bg-primary hover:text-primary-foreground transition-colors"
+                  >
+                    <AtSign className="size-4" />
+                  </a>
+                )}
               </div>
 
               <div className="p-6">

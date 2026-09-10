@@ -126,7 +126,7 @@ export default function ServicesIndexPage() {
             className="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground"
           >
             <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="size-4 text-teal-500" />
+              <CheckCircle2 className="size-4 text-primary" />
               NMC Registered Specialists
             </span>
             <a
@@ -139,11 +139,11 @@ export default function ServicesIndexPage() {
               4.9/5 Patient Rating
             </a>
             <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="size-4 text-teal-500" />
+              <CheckCircle2 className="size-4 text-primary" />
               FDA-Approved Technology
             </span>
             <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="size-4 text-teal-500" />
+              <CheckCircle2 className="size-4 text-primary" />
               100+ Patients Treated
             </span>
           </motion.div>
@@ -269,8 +269,8 @@ export default function ServicesIndexPage() {
                           <span
                             className={`px-2.5 py-1 rounded-full text-[10px] font-bold border ${
                               service.featured
-                                ? "bg-primary/40 text-teal-100 border-primary/50"
-                                : "bg-primary/10 text-primary border-primary/20/60"
+                                ? "bg-primary/40 text-primary-foreground border-primary/50"
+                                : "bg-primary/10 text-primary border-primary/20"
                             }`}
                           >
                             {service.badge}
@@ -334,8 +334,8 @@ export default function ServicesIndexPage() {
                             <CheckCircle2
                               className={`size-3.5 shrink-0 ${
                                 service.featured
-                                  ? "text-teal-400"
-                                  : "text-teal-500"
+                                  ? "text-primary-foreground"
+                                  : "text-primary"
                               }`}
                             />
                             <span
@@ -398,7 +398,7 @@ export default function ServicesIndexPage() {
 
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 text-teal-300 text-xs font-semibold uppercase tracking-wider mb-2">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 text-primary-foreground text-xs font-semibold uppercase tracking-wider mb-2">
                 <CheckCircle2 className="size-3.5" />
                 Consultation with Doctors
               </span>
@@ -421,11 +421,11 @@ export default function ServicesIndexPage() {
                 Book Consultation
               </Link>
               <a
-                href="tel:9765974518"
+                href="tel:9767648659"
                 className="px-6 py-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground font-semibold text-sm border border-primary-foreground/20 backdrop-blur-xs transition-all inline-flex items-center gap-2 justify-center whitespace-nowrap"
               >
-                <Phone className="size-4 text-teal-400" />
-                +977 9765974518
+                <Phone className="size-4 text-primary-foreground" />
+                +977 976-7648659
               </a>
             </div>
           </div>

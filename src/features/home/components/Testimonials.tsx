@@ -12,6 +12,10 @@ import { ExternalLink, Quote, Star } from "lucide-react";
 
 import { testimonials, type TestimonialItem } from "../data/testimonialsData";
 
+/* The homepage rotates the first 3 Google reviews with profile photos; the
+   4th review is featured at the bottom of the Gallery page instead. */
+const homepageTestimonials = testimonials.slice(0, 3);
+
 /* Reviewers are real Google users; show branded initials instead of
    impersonating them with stock photos. */
 const initialsOf = (name: string) =>
@@ -22,7 +26,7 @@ const initialsOf = (name: string) =>
     .join("")
     .toUpperCase();
 
-const COUNT = testimonials.length;
+const COUNT = homepageTestimonials.length;
 const TAU = Math.PI * 2;
 
 /* Every avatar occupies the same fixed square box; the visual size comes from
@@ -173,7 +177,7 @@ function OrbitAvatar({
           aria-label={`Show review from ${item.name}`}
           aria-current={isActive}
           className={`group block h-full w-full cursor-pointer rounded-full transition-shadow duration-500 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none ${
-            isActive ? "shadow-[0_20px_44px_-14px_rgba(31,126,121,0.5)]" : ""
+            isActive ? "shadow-[0_20px_44px_-14px_rgba(168,132,28,0.5)]" : ""
           }`}
         >
           {item.imageSrc ? (
@@ -281,7 +285,7 @@ export const Testimonials: React.FC = () => {
     return () => window.clearInterval(id);
   }, [paused, reducedMotion, sectionVisible, activeIndex, select]);
 
-  const active = testimonials[activeIndex];
+  const active = homepageTestimonials[activeIndex];
 
   const textTransition = reducedMotion
     ? { duration: 0, delay: 0 }
@@ -348,7 +352,7 @@ export const Testimonials: React.FC = () => {
                 />
               </svg>
 
-              {testimonials.map((item, index) => (
+              {homepageTestimonials.map((item, index) => (
                 <OrbitAvatar
                   key={item.name}
                   item={item}

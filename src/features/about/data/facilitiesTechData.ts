@@ -30,7 +30,7 @@ export const FACILITIES_TECH: FacilityTechItem[] = [
     title: "FotoFinder Trichovision",
     specs: "FotoFinder Systems, Imported from Germany",
     caption:
-      "Digital epiluminescence dermatoscopic imaging for microscopic scalp analysis, follicular density calculation, and precision hair transplant mapping.",
+      "Digital epiluminescence dermatoscopic imaging for microscopic scalp analysis, follicular density calculation, and precision hair-care planning.",
     image:
       "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop",
     category: "Trichology Diagnostics",
@@ -48,7 +48,7 @@ export const FACILITIES_TECH: FacilityTechItem[] = [
     title: "Sterile Minor Surgical Suite",
     specs: "HEPA Filtration & Medical Sterilization",
     caption:
-      "Strict hospital-grade sterilized environment designed specifically for seamless, infection-free hair transplant surgeries and minor dermatological procedures.",
+      "Strict hospital-grade sterilized environment designed specifically for seamless, infection-free minor dermatological procedures.",
     image:
       "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop",
     category: "Clinical Facility",

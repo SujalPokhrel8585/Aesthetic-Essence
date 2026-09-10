@@ -47,27 +47,27 @@ export const DEFAULT_FOOTER_MENU_ITEMS: FooterMenuItem[] = [
     links: [
       {
         text: "Facebook",
-        url: "https://www.facebook.com/ae.ktm/#",
+        url: "https://www.facebook.com/profile.php?id=61560382797664",
         external: true,
       },
       {
         text: "Instagram",
-        url: "https://www.instagram.com/aeskinandhair___/",
+        url: "https://www.instagram.com/aestheticessence.np",
         external: true,
       },
       {
         text: "TikTok",
-        url: "https://www.tiktok.com/@aeskinhairclinic",
+        url: "https://www.tiktok.com/@aestheticessence.np",
         external: true,
       },
       {
         text: "Google Maps",
-        url: "https://maps.app.goo.gl/2NXCkgZ65D6Z722y9",
+        url: "https://www.google.com/maps/place/Aesthetic+Essence+Skin+and+Hair+Clinic/@27.7353999,85.3178899,17z/data=!4m6!3m5!1s0x39eb1960445007ff:0x4b83485b2b2cb147!8m2!3d27.7353999!4d85.3178899!16s%2Fg%2F11wqy376v5",
         external: true,
       },
       {
         text: "WhatsApp",
-        url: "https://wa.me/9779765974518",
+        url: "https://wa.me/9779767648659",
         external: true,
       },
     ],

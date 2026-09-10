@@ -17,7 +17,7 @@ export default function StatsCounter() {
 
         <div className="relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20/60 text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-semibold uppercase tracking-wider mb-3">
               <Award className="size-3.5" /> Proven Track Record
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground">

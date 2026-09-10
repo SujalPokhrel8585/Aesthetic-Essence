@@ -11,4 +11,6 @@ export interface Doctor {
   rating?: number;
   reviews?: number;
   bio: string;
+  /** Public Instagram profile shown on the doctor card. */
+  instagram?: string;
 }

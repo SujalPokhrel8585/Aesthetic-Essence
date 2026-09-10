@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
         </h2>
         <p className="mt-3 text-sm sm:text-base text-muted-foreground">
           Four foundational pillars that establish our reputation as
-          Kathmandu&apos;s trusted skin and hair restoration center.
+          Kathmandu&apos;s trusted skin and hair care center.
         </p>
       </div>
 

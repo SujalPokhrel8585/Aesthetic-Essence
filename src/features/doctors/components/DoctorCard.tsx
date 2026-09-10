@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { CalendarCheck, Star } from "lucide-react";
+import { CalendarCheck, Star, AtSign } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import type { Doctor } from "@/types";
@@ -41,7 +41,7 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
             className="h-full w-full object-cover object-top transition-transform duration-300 hover:scale-105"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary to-[#2e9e97]">
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary to-[#7a5c0a]">
             <span className="text-4xl font-bold tracking-wide text-white">
               {doctor.name
                 .replace("Dr. ", "")
@@ -59,6 +59,18 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
         {doctor.specialty}
         {doctor.yearsExperience ? ` · ${doctor.yearsExperience} yrs exp.` : ""}
       </p>
+
+      {doctor.instagram && (
+        <a
+          href={doctor.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:underline underline-offset-2"
+        >
+          <AtSign className="size-3.5" />
+          {doctor.instagram.replace("https://www.instagram.com/", "@")}
+        </a>
+      )}
 
       {typeof doctor.rating === "number" && (
         <div className="my-3 flex items-center gap-2">

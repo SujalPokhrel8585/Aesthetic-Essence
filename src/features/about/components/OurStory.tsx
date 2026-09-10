@@ -26,23 +26,25 @@ export default function OurStory() {
           {/* 3 Digestible Paragraphs */}
           <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed">
             <p>
-              Founded in the heart of Samakhushi, Kathmandu, AestheticEssence Skin &amp;
-              Hair Clinic was born out of a dedication to bring ethical,
-              world-class dermatological science and surgical trichology to
-              Nepal in an atmosphere of serene, patient-centered comfort.
+              Founded at City Square Mall in the heart of Samakhushi,
+              Kathmandu, AestheticEssence Skin &amp; Hair Clinic was born out of
+              a dedication to bring ethical, world-class dermatological
+              science and aesthetic care to Nepal in an atmosphere of serene,
+              patient-centered comfort.
             </p>
             <p>
               Our mission is grounded in evidence-based medicine: we believe
-              true skin health and hair restoration are achieved through
-              thorough scientific diagnosis, FDA-approved technology, and
-              custom-tailored regimens rather than one-size-fits-all fixes.
+              true skin health is achieved through thorough scientific
+              diagnosis, FDA-approved technology, and custom-tailored regimens
+              rather than one-size-fits-all fixes.
             </p>
             <p>
-              Today, AestheticEssence specializes in advanced FUE hair transplantation,
-              medical hydrafacials, personalized acne and scar correction,
-              melasma control, and non-surgical facial rejuvenation, serving
-              both local residents and international visitors with
-              uncompromising standards.
+              Today, AestheticEssence specializes in advanced skin treatments —
+              medical hydrafacials, PRP &amp; GFC regenerative therapy,
+              personalized acne and scar correction, melasma control, laser
+              procedures, and non-surgical facial rejuvenation — serving both
+              local residents and international visitors with uncompromising
+              standards.
             </p>
           </div>
 
@@ -91,14 +93,14 @@ export default function OurStory() {
           <div className="relative rounded-3xl overflow-hidden shadow-xl border border-border bg-card">
             <div className="relative aspect-4/3 overflow-hidden">
               <img
-                src="/clinic/front-desk.webp"
-                alt="Reception and pharmacy of AestheticEssence Skin & Hair Clinic, Samakhushi"
+                src="/clinic/front-desk.png"
+                alt="Reception of AestheticEssence Skin & Hair Clinic, Samakhushi"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 text-white">
-                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-teal-300 uppercase tracking-wider mb-1">
-                  📍 Samakhushi, Kathmandu
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-300 uppercase tracking-wider mb-1">
+                  📍 City Square Mall, Samakhushi, Kathmandu
                 </span>
                 <h3 className="text-base font-bold">
                   AestheticEssence Skin &amp; Hair Clinic
@@ -111,15 +113,15 @@ export default function OurStory() {
 
             <div className="p-5 bg-primary text-primary-foreground flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="size-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center border border-teal-500/30">
+                <div className="size-10 rounded-full bg-primary-foreground/20 text-primary-foreground flex items-center justify-center border border-primary-foreground/30">
                   <Clock className="size-5" />
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-primary-foreground/70">
-                    Open Daily
+                    Open Sun – Fri
                   </p>
                   <p className="text-sm font-bold text-primary-foreground">
-                    10:00 AM – 6:00 PM
+                    11:00 AM – 6:00 PM
                   </p>
                 </div>
               </div>

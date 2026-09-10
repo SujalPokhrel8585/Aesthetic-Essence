@@ -9,7 +9,7 @@ export const CLINIC_INFO = {
   siteUrl: "https://aestheticessence.com.np",
   // Full visitor-facing address (landmark included so patients can find us).
   address: "City Square Mall (3rd Floor), Samakhushi Road, Kathmandu, Nepal",
-  addressShort: "Samakhushi, Kathmandu, Nepal",
+  addressShort: "City Square Mall (3rd Floor), Samakhushi Road, Kathmandu, Nepal",
   addressStreet: "City Square Mall (3rd Floor)",
   addressLocality: "Samakhushi, Kathmandu",
   addressCountry: "NP",

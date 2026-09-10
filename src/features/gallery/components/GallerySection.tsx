@@ -186,7 +186,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground max-w-md">
-              Browse our verified portfolio of skin rejuvenation, hair restoration, and transformative medical artistry.
+              Browse our verified portfolio of skin rejuvenation, laser care, and transformative medical artistry.
             </p>
           </div>
 
@@ -414,8 +414,8 @@ const HeroUComposition: React.FC<HeroUCompositionProps> = ({
       {/* Column 3 (Center - Dipped Down with AestheticEssence Mandala Badge & View More Button) */}
       <div className="flex flex-col items-center gap-4 lg:mt-24">
         {/* Decorative AestheticEssence Flower Icon */}
-        <div className="size-9 rounded-full bg-cyan-100/90 border border-cyan-200/80 flex items-center justify-center text-cyan-700 shadow-xs animate-bounce [animation-duration:3s]">
-          <Sparkles className="size-4 text-cyan-700" />
+        <div className="size-9 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shadow-xs animate-bounce [animation-duration:3s]">
+          <Sparkles className="size-4 text-primary" />
         </div>
 
         {/* Center Card */}
@@ -429,7 +429,7 @@ const HeroUComposition: React.FC<HeroUCompositionProps> = ({
         {/* View More Downward Button */}
         <button
           onClick={onViewMoreClick}
-          className="w-full py-3.5 px-6 rounded-2xl bg-primary hover:bg-primary text-primary-foreground font-medium text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg hover:shadow-teal-500/25 transition-all duration-300 cursor-pointer group"
+          className="w-full py-3.5 px-6 rounded-2xl bg-primary hover:bg-primary text-primary-foreground font-medium text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-pointer group"
         >
           <span>View More</span>
           <ArrowDown className="size-4 transform group-hover:translate-y-1 transition-transform" />
@@ -549,16 +549,15 @@ const EditorialFooter: React.FC<EditorialFooterProps> = ({
         <Quote className="size-8 text-muted-foreground/80 shrink-0 mt-1" />
         <div>
           <p className="text-sm text-muted-foreground leading-relaxed font-normal">
-            “Highly responsive. Very good doctor and staff. They respond very
-            well, patiently explain skincare, and it&apos;s affordable too.”
+            {`“${testimonials[3].text}”`}
           </p>
           <a
-            href="https://maps.app.goo.gl/KaF23qQH6VQW4Jj3A"
+            href={testimonials[3].sourceUrl ?? GOOGLE_REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-1.5 font-serif italic text-lg text-cyan-700 font-semibold tracking-wide underline-offset-2 hover:underline dark:text-teal-300"
+            className="mt-3 inline-flex items-center gap-1.5 font-serif italic text-lg text-primary font-semibold tracking-wide underline-offset-2 hover:underline"
           >
-            anayaskincare1992 &bull; Verified Client
+            {testimonials[3].name} &bull; Verified Google Review
             <ArrowUpRight className="size-4 shrink-0" />
           </a>
         </div>

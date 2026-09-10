@@ -13,7 +13,7 @@ export const STATS: TrustStat[] = [
   { icon: Users, value: "100+", label: "Patients Treated" },
   {
     icon: Award,
-    value: "Advanced",
-    label: "Dermatology & Hair Transplant Expert",
+    value: "2",
+    label: "Specialist Dermatologists",
   },
 ];

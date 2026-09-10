@@ -16,7 +16,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.aestheticessence.com.np/services/hair-transplant</loc>
+    <loc>https://www.aestheticessence.com.np/services/prp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -37,6 +37,56 @@
   </url>
   <url>
     <loc>https://www.aestheticessence.com.np/services/melasma</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/doctor-consultation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/scar-revision</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/thread-lifting</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/mesoinjections</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/mole-skin-tag-wart-removal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/vitiligo-treatment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/tattoo-removal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/intralesional-injections</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/skin-anti-aging</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aestheticessence.com.np/services/sti-treatment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -28,7 +28,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   // --- Hero U-Shape Feature Cards (First 7 items) ---
   {
     id: "ae-01",
-    src: "/gallery/doctor-performing-procedure.webp",
+    src: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800&auto=format&fit=crop",
     title: "Expert Hands at Work",
     subtitle: "Our dermatologist performing a supervised procedure",
     category: "Clinical",
@@ -38,7 +38,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-02",
-    src: "/gallery/hydrafacial-treatment.webp",
+    src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop",
     title: "HydraFacial Therapy",
     subtitle: "Deep-cleansing, hydrating care for an instant glow",
     category: "Skin Rejuvenation",
@@ -47,7 +47,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-03",
-    src: "/gallery/precision-laser-treatment.webp",
+    src: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop",
     title: "Precision Laser Technology",
     subtitle: "Targeted laser energy for stubborn skin concerns",
     category: "Aesthetics",
@@ -57,7 +57,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-04",
-    src: "/gallery/laser-procedure-care.webp",
+    src: "https://images.unsplash.com/photo-1620331311520-24642279d2f5?q=80&w=800&auto=format&fit=crop",
     title: "Safe, Supervised Laser Care",
     subtitle: "Protective eyewear and strict protocols at every step",
     category: "Clinical",
@@ -66,7 +66,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-05",
-    src: "/gallery/ultrasonic-scrubber-facial.webp",
+    src: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop",
     title: "Ultrasonic Deep-Cleansing Facial",
     subtitle: "Sonic scrubber technology lifting impurities from pores",
     category: "Skin Rejuvenation",
@@ -76,7 +76,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-06",
-    src: "/gallery/laser-facial-treatment.webp",
+    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop",
     title: "Comfortable Laser Sessions",
     subtitle: "Patients relax while our trained team handles the tech",
     category: "Aesthetics",
@@ -85,7 +85,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-07",
-    src: "/gallery/laser-skin-treatment.webp",
+    src: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800&auto=format&fit=crop",
     title: "Dermatologist-Led Treatments",
     subtitle: "Medical-grade lasers operated by experienced specialists",
     category: "Clinical",
@@ -96,16 +96,16 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   // --- Row 2 & Extended Works (Auto-rendered in dynamic rows below Hero) ---
   {
     id: "ae-08",
-    src: "/gallery/hair-transplant-procedure.webp",
-    title: "Hair Restoration Procedures",
-    subtitle: "Scalp preparation under Dr. Karki's close supervision",
+    src: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop",
+    title: "Regenerative Hair Treatments",
+    subtitle: "PRP & GFC therapy boosting natural hair density",
     category: "Hair Care",
     year: "2026",
     aspectRatio: "portrait",
   },
   {
     id: "ae-09",
-    src: "/gallery/laser-hair-removal.webp",
+    src: "https://images.unsplash.com/photo-1620331311520-24642279d2f5?q=80&w=800&auto=format&fit=crop",
     title: "Laser Hair Removal",
     subtitle: "Long-term reduction, safe for all skin tones",
     category: "Aesthetics",
@@ -114,7 +114,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-10",
-    src: "/gallery/fractional-laser-acne-treatment.webp",
+    src: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop",
     title: "Fractional Acne & Scar Laser",
     subtitle: "Resurfacing treatment for clearer, smoother skin",
     category: "Clinical",
@@ -123,7 +123,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-11",
-    src: "/gallery/led-light-therapy.webp",
+    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop",
     title: "LED Light Therapy",
     subtitle: "Red-light phototherapy to calm and rejuvenate skin",
     category: "Skin Rejuvenation",
@@ -132,7 +132,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-12",
-    src: "/gallery/hair-restore-injection.webp",
+    src: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop",
     title: "Regenerative Hair Treatments",
     subtitle: "Targeted hairline care to restore natural density",
     category: "Hair Care",
@@ -141,7 +141,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-13",
-    src: "/gallery/facial-rejuvenation.webp",
+    src: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=800&auto=format&fit=crop",
     title: "Facial Rejuvenation",
     subtitle: "Nourishing medical facials tailored to your skin",
     category: "Skin Rejuvenation",
@@ -150,7 +150,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-14",
-    src: "/gallery/chemical-peel-treatment.webp",
+    src: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop",
     title: "Chemical Peeling Session",
     subtitle: "Medical-grade peels renewing texture and tone",
     category: "Skin Rejuvenation",
@@ -159,7 +159,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "ae-15",
-    src: "/gallery/microneedling-treatment.webp",
+    src: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop",
     title: "Microneedling",
     subtitle: "Collagen-induction therapy for smoother skin",
     category: "Aesthetics",

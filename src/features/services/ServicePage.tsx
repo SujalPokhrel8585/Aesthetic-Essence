@@ -134,7 +134,7 @@ export default function ServicePage() {
                 {service.category}
               </span>
               {service.badge && (
-                <span className="px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20/60 text-[11px] font-bold">
+                <span className="px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-[11px] font-bold">
                   {service.badge}
                 </span>
               )}
@@ -152,7 +152,7 @@ export default function ServicePage() {
 
           {/* Key facts */}
           <div className="lg:col-span-7 bg-card rounded-3xl p-7 sm:p-9 border border-border shadow-lg shadow-black/5 flex flex-col justify-center">
-            <div className="size-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center border border-primary/20/60 shadow-xs mb-5">
+            <div className="size-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center border border-primary/20 shadow-xs mb-5">
               <Icon className="size-6" />
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-2">
@@ -174,11 +174,11 @@ export default function ServicePage() {
                 <ArrowRight className="size-4" />
               </Link>
               <a
-                href="tel:9765974518"
+                href="tel:9767648659"
                 className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-full bg-muted hover:bg-muted/80 text-foreground font-semibold text-sm border border-border transition-colors sm:w-auto"
               >
                 <Phone className="size-4 text-accent-foreground" />
-                +977 9765974518
+                +977 976-7648659
               </a>
               <a
                 href={whatsappHref}
@@ -209,7 +209,7 @@ export default function ServicePage() {
                 key={i}
                 className="flex items-start gap-3 bg-card rounded-2xl p-5 border border-border shadow-xs"
               >
-                <div className="size-8 rounded-full bg-accent text-accent-foreground flex items-center justify-center shrink-0 border border-teal-500/60">
+                <div className="size-8 rounded-full bg-accent text-accent-foreground flex items-center justify-center shrink-0 border border-border">
                   <CheckCircle2 className="size-4.5" />
                 </div>
                 <span className="text-sm text-foreground leading-relaxed pt-1">
@@ -240,7 +240,7 @@ export default function ServicePage() {
                   className="relative bg-card rounded-2xl p-5 border border-border shadow-xs"
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="size-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center border border-primary/20/60 shrink-0">
+                    <div className="size-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center border border-primary/20 shrink-0">
                       <StepIcon className="size-4.5" />
                     </div>
                     <span className="text-xs font-bold text-muted-foreground">
@@ -289,7 +289,7 @@ export default function ServicePage() {
                     </div>
                     <div className="p-4">
                       <div className="flex items-center gap-2 mb-1.5">
-                        <div className="size-6 rounded-lg bg-primary/10 text-primary flex items-center justify-center border border-primary/20/60 shrink-0">
+                        <div className="size-6 rounded-lg bg-primary/10 text-primary flex items-center justify-center border border-primary/20 shrink-0">
                           <RIcon className="size-3.5" />
                         </div>
                         <h3 className="text-sm font-bold text-foreground">
@@ -324,7 +324,7 @@ export default function ServicePage() {
 
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 text-teal-300 text-xs font-semibold uppercase tracking-wider mb-2">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 text-primary-foreground text-xs font-semibold uppercase tracking-wider mb-2">
                 <CheckCircle2 className="size-3.5" />
                 Consultation with Doctors
               </span>

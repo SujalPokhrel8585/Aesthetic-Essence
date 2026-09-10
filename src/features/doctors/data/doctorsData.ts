@@ -6,28 +6,24 @@ import type { Doctor } from "@/types";
 export const doctorData: Doctor[] = [
   {
     id: 1,
-    name: "Dr. Saroj Karki",
-    specialty: "Lead Dermatologist & Hair Transplant Surgeon",
-    category: "Hair Restoration",
-    imageUrl: "/doctors/dr-saroj-karki.webp",
-    bio: "MBBS, MD (Dermatology & Venereology), NMC-registered specialist. Leads surgical hair restoration (FUE), clinical trichology, and medical care for melasma and acne.",
+    name: "Dr. Shraddha Chudal",
+    specialist: "Consultant Dermatologist",
+    category: "Clinical Dermatology",
+    instagram: "https://www.instagram.com/dr.shraddhachudal",
+    bio: "Consultant dermatologist managing general and clinical dermatology — acne, pigmentation and melasma, hair fall, and anti-aging care — with evidence-based, patient-first treatment plans.",
+    photoUrl:
+      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=600&auto=format&fit=crop",
   },
   {
     id: 2,
-    name: "Dr. Alsha Shrestha",
-    specialty: "Consultant Dermatologist",
-    category: "Clinical Dermatology",
-    imageUrl: "/doctors/dr-alsha-shrestha.webp",
-    bio: "Consultant dermatologist managing general and clinical dermatology, acne, eczema, pigmentation, and preventive skin care with evidence-based treatment plans.",
-  },
-  {
-    id: 3,
-    name: "Dr. Bibek Subedi",
-    specialty: "Consultant Dermatologist & Hair Transplant Surgeon",
-    category: "Hair Restoration",
-    imageUrl: "/doctors/dr-bibek-subedi.webp",
-    bio: "Consultant dermatologist and hair transplant surgeon focused on hair restoration planning, FUE surgery, and long-term scalp and hair health.",
+    name: "Dr. Pramesh Koirala",
+    specialist: "Consultant Dermatologist",
+    category: "Aesthetic Dermatology",
+    instagram: "https://www.instagram.com/drprameshkoirala",
+    bio: "Consultant dermatologist focused on medical and aesthetic dermatology — laser treatments, PRP & GFC regenerative therapy, scar revision, and surgical dermatology.",
+    photoUrl:
+      "https://images.unsplash.com/photo-1612349317191-a9b7f3173f36?q=80&w=600&auto=format&fit=crop",
   },
 ];
 
-export const categoryData = ["Clinical Dermatology", "Hair Restoration"];
+export const categoryData = ["Clinical Dermatology", "Aesthetic Dermatology"];

@@ -1,7 +1,7 @@
 // Live open/closed status for the clinic, computed in Nepal Time (NPT, UTC+5:45)
 // so the badge is correct for visitors in any timezone.
 
-export const CLINIC_OPEN_HOUR = 10; // 10:00 AM
+export const CLINIC_OPEN_HOUR = 11; // 11:00 AM
 export const CLINIC_CLOSE_HOUR = 18; // 6:00 PM
 
 /** "10:00 AM" / "6:00 PM", single source for displayed hours everywhere. */
@@ -24,11 +24,23 @@ export function getClinicStatus(now: Date = new Date()): ClinicStatus {
     timeZone: "Asia/Kathmandu",
     hour: "2-digit",
     minute: "2-digit",
+    weekday: "short",
     hour12: false,
   }).formatToParts(now);
   const hour = Number(parts.find((p) => p.type === "hour")?.value ?? 0);
   const minute = Number(parts.find((p) => p.type === "minute")?.value ?? 0);
+  const weekday = parts.find((p) => p.type === "weekday")?.value ?? "";
   const minutes = hour * 60 + minute;
+
+  // Closed every Saturday
+  if (weekday === "Sat") {
+    // Minutes until next open: to midnight, then to opening hour Sunday
+    return {
+      open: false,
+      opensInMinutes: 24 * 60 - minutes + CLINIC_OPEN_HOUR * 60,
+      closesInMinutes: null,
+    };
+  }
 
   const openMinutes = CLINIC_OPEN_HOUR * 60;
   const closeMinutes = CLINIC_CLOSE_HOUR * 60;

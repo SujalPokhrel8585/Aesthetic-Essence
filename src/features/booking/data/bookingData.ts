@@ -11,7 +11,7 @@ export interface BookingFormData {
   notes: string;
 }
 
-export const WHATSAPP_NUMBER = "9779861411701";
+export const WHATSAPP_NUMBER = "9779767648659";
 
 export const BOOKING_SERVICE_OPTIONS = [
   "Hair Treatment",
@@ -23,9 +23,8 @@ export const BOOKING_SERVICE_OPTIONS = [
 
 export const BOOKING_DOCTOR_OPTIONS = [
   "Any available doctor",
-  "Dr. Saroj Karki",
-  "Dr. Alsha Shrestha",
-  "Dr. Bibek Subedi",
+  "Dr. Shraddha Chudal",
+  "Dr. Pramesh Koirala",
 ] as const;
 
 export const INITIAL_FORM: BookingFormData = {

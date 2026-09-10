@@ -51,7 +51,7 @@ const page = await browser.newPage({
 async function capture(theme) {
   await page.addInitScript(
     ([key, value]) => localStorage.setItem(key, value),
-    ["lotus-theme", theme],
+    ["ae-theme", theme],
   );
   await page.goto(`http://localhost:${PORT}/`, { waitUntil: "networkidle" });
 

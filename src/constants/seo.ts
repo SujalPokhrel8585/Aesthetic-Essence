@@ -23,20 +23,20 @@ export const STATIC_SEO: Record<string, SeoMeta> = {
   "/": {
     title: `${BRAND} | Dermatologist & Skin Clinic in ${LOCATION}`,
     description:
-      "Advanced skin & hair clinic in Samakhushi, Kathmandu. HydraFacial, acne & scar treatment, laser hair removal, Botox, melasma care and hair transplant by NMC-registered dermatologists. Book on WhatsApp.",
+      "Advanced skin & hair clinic at City Square Mall, Samakhushi, Kathmandu. HydraFacial, acne & scar treatment, laser hair reduction, Botox, PRP & GFC and melasma care by NMC-registered dermatologists. Book on WhatsApp.",
     path: "/",
-    ogImage: "/clinic/front-desk.webp",
+    ogImage: "/clinic/front-desk.png",
   },
   "/services": {
     title: `Skin & Hair Treatments in Kathmandu | ${BRAND}`,
     description:
-      "Medical-grade dermatology treatments in Samakhushi, Kathmandu, HydraFacial from NPR 2,500, acne & scar care, laser hair removal, Botox & fillers, melasma treatment and FUE hair transplant.",
+      "Medical-grade dermatology treatments in Samakhushi, Kathmandu — HydraFacial, acne & scar care, laser hair reduction, Botox & fillers, PRP & GFC, melasma treatment and medi peels.",
     path: "/services",
   },
   "/doctors": {
     title: `Our Dermatologists | ${BRAND}`,
     description:
-      "Meet our NMC-registered dermatologists in Samakhushi, Kathmandu, Dr. Saroj Karki (MD Dermatology & hair transplant surgeon), Dr. Alsha Shrestha and Dr. Bibek Subedi.",
+      "Meet our NMC-registered consultant dermatologists in Samakhushi, Kathmandu — Dr. Shraddha Chudal and Dr. Pramesh Koirala.",
     path: "/doctors",
   },
   "/about": {
@@ -48,13 +48,13 @@ export const STATIC_SEO: Record<string, SeoMeta> = {
   "/gallery": {
     title: `Clinic Gallery | ${BRAND}`,
     description:
-      "Inside AestheticEssence Skin & Hair Clinic, Samakhushi, real photos of our dermatology treatments, laser care, HydraFacial sessions and hair restoration procedures.",
+      "Inside AestheticEssence Skin & Hair Clinic, Samakhushi, real photos of our dermatology treatments, laser care, HydraFacial sessions and regenerative hair care procedures.",
     path: "/gallery",
   },
   "/contact": {
     title: `Contact & Location | ${BRAND}`,
     description:
-      "Visit us at Siddhartha Bank Building, 2nd Floor, Samakhushi, Kathmandu. Call +977 9765974518 or message us on WhatsApp, we typically respond within 24 hours.",
+      "Visit us at City Square Mall (3rd Floor), Samakhushi Road, Kathmandu. Call +977 976-7648659 or 01-4978659, or message us on WhatsApp — we typically respond within 24 hours.",
     path: "/contact",
   },
   "/book": {
@@ -98,7 +98,7 @@ export function medicalClinicSchema() {
     "@type": "MedicalClinic",
     name: CLINIC_INFO.name,
     url: CLINIC_INFO.siteUrl,
-    image: `${CLINIC_INFO.siteUrl}/logo.png`,
+    image: `${CLINIC_INFO.siteUrl}/logo.jpg`,
     telephone: `+977${CLINIC_INFO.phoneRaw}`,
     priceRange: "NPR 2,500+",
     medicalSpecialty: "Dermatology",
@@ -117,7 +117,7 @@ export function medicalClinicSchema() {
     hasMap: CLINIC_INFO.socials.maps,
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: `${String(CLINIC_OPEN_HOUR).padStart(2, "0")}:00`,
       closes: `${String(CLINIC_CLOSE_HOUR).padStart(2, "0")}:00`,
     },
@@ -125,6 +125,7 @@ export function medicalClinicSchema() {
       CLINIC_INFO.socials.facebook,
       CLINIC_INFO.socials.instagram,
       CLINIC_INFO.socials.tiktok,
+      CLINIC_INFO.socials.youtube,
     ],
   };
 }
@@ -137,7 +138,7 @@ export function physiciansSchema() {
       name: doctor.name,
       jobTitle: doctor.specialty,
       description: doctor.bio,
-      image: `${CLINIC_INFO.siteUrl}${doctor.imageUrl}`,
+      ...(doctor.instagram ? { sameAs: [doctor.instagram] } : {}),
       url: `${CLINIC_INFO.siteUrl}/doctors`,
       medicalSpecialty: "Dermatology",
       worksFor: {
@@ -162,7 +163,7 @@ export function serviceSchema(service: Service) {
     name: service.title,
     description: service.description,
     procedureType: "https://schema.org/TherapeuticProcedure",
-    bodyLocation: service.category === "Hair Restoration" ? "Scalp" : "Skin",
+    bodyLocation: service.category === "Hair Care" ? "Scalp" : "Skin",
     howPerformed: `In-clinic treatment at ${CLINIC_INFO.name}, ${CLINIC_INFO.address}. Typical session: ${service.duration}.`,
     provider: {
       "@type": "MedicalClinic",
