@@ -37,19 +37,19 @@ export const testimonials: TestimonialItem[] = [
     avatarBg: "from-yellow-500 to-amber-700",
   },
   {
+    name: "Manisha",
+    text: "The staff are very professional and accommodating, and the clinic is very clean and aesthetically beautiful inside. Dr Shraddha is very knowledgable and I felt very comfortable with her as she explains everything very throughly. Highly recommend!",
+    rating: 5,
+    sourceUrl: "https://maps.app.goo.gl/Kg4RqNtTev3mGvNJ8",
+    imageSrc: "/public/manisha.webp",
+    avatarBg: "from-amber-400 to-orange-600",
+  },
+  {
     name: "Purnima KC",
     text: "One of the Best skin clinic I have visited.The staffs are knowledgeable, and the equipment is top-notch👌🥰Highly recommend  for anyone looking for high-quality skincare.",
     rating: 5,
     sourceUrl: "https://maps.app.goo.gl/YV93VYLTC8No1nAy7",
     imageSrc: "/public/purnima.webp",
     avatarBg: "from-yellow-400 to-amber-600",
-  },
-  {
-    name: "Manisha",
-    text: "The staff are very professional and accommodating, and the clinic is very clean and aesthetically beautiful inside. Dr Shraddha is very knowledgable and I felt very comfortable with her as she explains everything very throughly. Highly recommend!",
-    rating: 5,
-    sourceUrl: "https://maps.app.goo.gl/Kg4RqNtTev3mGvNJ8",
-    imageSrc: "manisha.webp",
-    avatarBg: "from-amber-400 to-orange-600",
   },
 ];

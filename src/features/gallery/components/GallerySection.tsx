@@ -20,7 +20,13 @@ import {
 } from "lucide-react";
 import { GALLERY_ITEMS } from "@/services/galleryService";
 import type { GalleryItem } from "@/types";
-import { GOOGLE_REVIEWS_URL, testimonials } from "@/features/home/data/testimonialsData";
+import { GOOGLE_REVIEWS_URL, testimonials, type TestimonialItem } from "@/features/home/data/testimonialsData";
+
+/** The shortest testimonial (by text length) for the editorial footer in the Gallery. */
+const SHORTEST_REVIEW: TestimonialItem = testimonials.reduce(
+  (shortest, current) => (current.text.length < shortest.text.length ? current : shortest),
+  testimonials[0],
+);
 
 export type { GalleryItem };
 
@@ -549,15 +555,15 @@ const EditorialFooter: React.FC<EditorialFooterProps> = ({
         <Quote className="size-8 text-muted-foreground/80 shrink-0 mt-1" />
         <div>
           <p className="text-sm text-muted-foreground leading-relaxed font-normal">
-            {`“${testimonials[3].text}”`}
+            {`“${SHORTEST_REVIEW.text}”`}
           </p>
           <a
-            href={testimonials[3].sourceUrl ?? GOOGLE_REVIEWS_URL}
+            href={SHORTEST_REVIEW.sourceUrl ?? GOOGLE_REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-1.5 font-serif italic text-lg text-primary font-semibold tracking-wide underline-offset-2 hover:underline"
           >
-            {testimonials[3].name} &bull; Verified Google Review
+            {SHORTEST_REVIEW.name} &bull; Verified Google Review
             <ArrowUpRight className="size-4 shrink-0" />
           </a>
         </div>

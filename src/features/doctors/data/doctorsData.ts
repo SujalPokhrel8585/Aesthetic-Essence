@@ -7,21 +7,21 @@ export const doctorData: Doctor[] = [
   {
     id: 1,
     name: "Dr. Shraddha Chudal",
-    specialist: "Consultant Dermatologist",
+    specialty: "Consultant Dermatologist",
     category: "Clinical Dermatology",
     instagram: "https://www.instagram.com/dr.shraddhachudal",
     bio: "Consultant dermatologist managing general and clinical dermatology — acne, pigmentation and melasma, hair fall, and anti-aging care — with evidence-based, patient-first treatment plans.",
-    photoUrl:
+    imageUrl:
       "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=600&auto=format&fit=crop",
   },
   {
     id: 2,
     name: "Dr. Pramesh Koirala",
-    specialist: "Consultant Dermatologist",
+    specialty: "Consultant Dermatologist",
     category: "Aesthetic Dermatology",
     instagram: "https://www.instagram.com/drprameshkoirala",
     bio: "Consultant dermatologist focused on medical and aesthetic dermatology — laser treatments, PRP & GFC regenerative therapy, scar revision, and surgical dermatology.",
-    photoUrl:
+    imageUrl:
       "https://images.unsplash.com/photo-1612349317191-a9b7f3173f36?q=80&w=600&auto=format&fit=crop",
   },
 ];
