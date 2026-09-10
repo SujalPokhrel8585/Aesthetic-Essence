@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Non-blocking font load: stylesheet applies once fetched (swap keeps
+         text visible throughout). noscript fallback keeps fonts for SSR-off
+         clients with scripts disabled. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AestheticEssence Skin & Hair Clinic | Dermatologist in Samakhushi, Kathmandu</title>
+    <meta
+      name="description"
+      content="Advanced skin & hair clinic in Samakhushi, Kathmandu. HydraFacial, acne & scar treatment, laser hair removal, Botox, melasma care and hair transplant by NMC-registered dermatologists. Book on WhatsApp."
+    />
+    <meta name="theme-color" content="#0d9488" />
+    <!-- Preload critical above-the-fold hero images (static fallback for low-end devices) -->
+    <link rel="preload" as="image" href="/assets/stethoscope-light-BailOwvS.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/assets/stethoscope-dark-DrWnzTXB.webp" type="image/webp" />
+    <!-- Open Graph defaults; updated per route by the app's Seo component -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AestheticEssence Skin & Hair Clinic" />
+    <meta
+      property="og:title"
+      content="AestheticEssence Skin & Hair Clinic | Dermatologist in Samakhushi, Kathmandu"
+    />
+    <meta
+      property="og:description"
+      content="Advanced dermatology & hair care in Samakhushi, Kathmandu — HydraFacial, acne treatment, laser hair removal, Botox and hair transplant. Book on WhatsApp."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://www.aestheticessence.com.np/" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("ae-theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : prefersDark
+                ? "dark"
+                : "light";
+          if (theme === "dark") document.documentElement.classList.add("dark");
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

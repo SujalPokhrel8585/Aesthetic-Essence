@@ -1,0 +1,70 @@
+This is now being transformed for new website instead of logo, below are their details. 
+
+go through each and every text on the entire website, change evry mention of AestheticEssence Skin and Hair Clinic to AestheticEssence Skin and Hair Clinic
+
+https://github.com/SujalPokhrel8585/Aesthetic-Essence.git
+
+Replace each and every images from homepage to last page. with unsplash/pexels free images, must be related to the context.
+Change every details below, as well as look in the new images for new logo, and change the entire color-thrme of both dark and light view according to the color scheme of the logo, also have the logo and text the same size, and layout as before just update to this.
+
+any data related to ae must be removed. every whataspp and context related to logo, including in code, or robots, or sitemaps.
+create a new private repository and work there, do not touch ae repo get out of that repo.
+
+Details
+
+City Square Mall 
+
+Contact info
+
+City Square Mall (3rd floor), Samakhushi real, make sure map states this
+01-4978659
+9767648659
+
+https://www.instagram.com/aestheticessence.np
+https://www.facebook.com/profile.php?id=61560382797664
+https://www.tiktok.com/@aestheticessence.np
+https://www.youtube.com/@AestheticEssenceClinic
+
+aesthetic.essence@outlook.com
+
+maps and REVIEWS
+
+https://www.google.com/maps/place/Aesthetic+Essence+Skin+and+Hair+Clinic/@27.7353999,85.3178899,17z/data=!4m6!3m5!1s0x39eb1960445007ff:0x4b83485b2b2cb147!8m2!3d27.7353999!4d85.3178899!16s%2Fg%2F11wqy376v5?entry=ttu&g_ep=EgoyMDI2MDkwNi4wIKXMDSoASAFQAw%3D%3D
+
+replace the rotating images and reviews with this:
+https://maps.app.goo.gl/HC7z3eHxeVnpGt7s8
+https://maps.app.goo.gl/3CLEtbtc6C7L3iMj7
+https://maps.app.goo.gl/iK8P5QA1AR3S2ugp9
+https://maps.app.goo.gl/NbuS3rNyiUYxmZgs9
+
+Aesthetic Essence Skin and Hair Clinic
+
+2 doctors:
+Dr. Shraddha Chudal https://www.instagram.com/dr.shraddhachudal (in doctor contact and details)
+Dr. Pramesh Koirala https://www.instagram.com/drprameshkoirala (in doctor conatact and details)
+
+11 am-6pm Sun-Fri
+
+services (ADD whats remaining, fill with data from nepali related websites and blogs on this topics, for new treatment/services only)
+
+Doctor Consultation
+Melasma/Pigmentation Treatment
+PRP & GFC Treatment (Face and Hair)
+Microneedling
+Scar Revision
+Aesthetic Injections (Botox and Fillers)
+Thread Lifting
+Mesoinjections
+Hydrafacial/Medi Facial
+Acne/Acne Scar Treatment
+Moles/Skin Tags/Wart Removal
+Vitiligo Treatment
+Medi Peels
+Tattoo Removal
+Intralesional Injections
+Laser Hair Reduction
+Skin Anti-Aging
+Sexually Transmitted Infections (STIs) Treatment
+
+
+delete the new folder phtos, rename the photos and save it where it actually needs to go
