@@ -12,9 +12,9 @@ import { ExternalLink, Quote, Star } from "lucide-react";
 
 import { testimonials, type TestimonialItem } from "../data/testimonialsData";
 
-/* The homepage rotates the first 3 Google reviews with profile photos; the
-   4th review is featured at the bottom of the Gallery page instead. */
-const homepageTestimonials = testimonials.slice(0, 3);
+/* All 4 Google reviews rotate on the homepage with profile photos; the
+   shortest review is featured at the bottom of the Gallery page instead. */
+const homepageTestimonials = testimonials;
 
 /* Reviewers are real Google users; show branded initials instead of
    impersonating them with stock photos. */
