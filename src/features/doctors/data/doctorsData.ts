@@ -26,4 +26,6 @@ export const doctorData: Doctor[] = [
   },
 ];
 
+// use real images later
+
 export const categoryData = ["Clinical Dermatology", "Aesthetic Dermatology"];
