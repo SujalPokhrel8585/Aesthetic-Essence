@@ -98,7 +98,7 @@ export function medicalClinicSchema() {
     "@type": "MedicalClinic",
     name: CLINIC_INFO.name,
     url: CLINIC_INFO.siteUrl,
-    image: `${CLINIC_INFO.siteUrl}/logo.jpg`,
+    image: `${CLINIC_INFO.siteUrl}/logo-dark.png`,
     telephone: `+977${CLINIC_INFO.phoneRaw}`,
     priceRange: "NPR 2,500+",
     medicalSpecialty: "Dermatology",

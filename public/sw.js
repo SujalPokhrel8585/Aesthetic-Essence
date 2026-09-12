@@ -4,7 +4,9 @@
 //   - HTML pages: network-first, fallback to cached index.html (SPA navigation)
 //   - Non-page requests offline: plain 503 (NEVER html — html poisoned the 3D loader)
 //   - Version hash changes on every build → old caches auto-purged
-const CACHE_VERSION = "ae-v1";
+// Bumped to v2 so caches from the pre-fix deploy (which 404'd testimonial
+// photos) are purged for returning visitors.
+const CACHE_VERSION = "ae-v2";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const IMAGE_CACHE = `${CACHE_VERSION}-images`;
 const FONT_CACHE = `${CACHE_VERSION}-fonts`;

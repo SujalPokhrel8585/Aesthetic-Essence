@@ -51,7 +51,7 @@ export function Seo({
     ? ogImage.startsWith("http")
       ? ogImage
       : `${CLINIC_INFO.siteUrl}${ogImage}`
-    : `${CLINIC_INFO.siteUrl}/logo.jpg`;
+    : `${CLINIC_INFO.siteUrl}/logo-dark.png`;
 
   useEffect(() => {
     document.title = title;

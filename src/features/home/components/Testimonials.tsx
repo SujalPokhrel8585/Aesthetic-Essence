@@ -29,6 +29,44 @@ const initialsOf = (name: string) =>
 const COUNT = homepageTestimonials.length;
 const TAU = Math.PI * 2;
 
+/* Renders the reviewer's photo, falling back to the branded initials avatar if
+   the image is missing or fails to load (e.g. a 404 on a new host) — so the
+   orbit never shows an empty broken circle after a deployment. */
+function ReviewerAvatar({
+  item,
+  imgClassName,
+  fallbackClassName,
+  initialsClassName,
+}: {
+  item: TestimonialItem;
+  imgClassName: string;
+  fallbackClassName: string;
+  initialsClassName: string;
+}) {
+  const [imgFailed, setImgFailed] = useState(false);
+
+  if (item.imageSrc && !imgFailed) {
+    return (
+      <img
+        src={item.imageSrc}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        onError={() => setImgFailed(true)}
+        className={imgClassName}
+      />
+    );
+  }
+  return (
+    <div
+      aria-hidden="true"
+      className={fallbackClassName}
+    >
+      <span className={initialsClassName}>{initialsOf(item.name)}</span>
+    </div>
+  );
+}
+
 /* Every avatar occupies the same fixed square box; the visual size comes from
    `scale`, so the revolving orbit can never cause layout shift. */
 const AVATAR_BOX = 96;
@@ -180,32 +218,18 @@ function OrbitAvatar({
             isActive ? "shadow-[0_20px_44px_-14px_rgba(168,132,28,0.5)]" : ""
           }`}
         >
-          {item.imageSrc ? (
-            <img
-              src={item.imageSrc}
-              alt=""
-              loading="lazy"
-        decoding="async"
-              className={`h-full w-full rounded-full object-cover ring-2 transition-[ring-color] duration-500 ${
-                isActive ? "ring-primary/70" : "ring-border group-hover:ring-primary/40"
-              }`}
-            />
-          ) : (
-            <div
-              className={`flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br ${item.avatarBg} ring-2 transition-[ring-color] duration-500 ${
-                isActive ? "ring-primary/70" : "ring-border group-hover:ring-primary/40"
-              }`}
-              aria-hidden="true"
-            >
-              <span
-                className={`text-2xl font-bold tracking-wide text-white transition-transform duration-500 ${
-                  isActive ? "" : "group-hover:scale-105"
-                }`}
-              >
-                {initialsOf(item.name)}
-              </span>
-            </div>
-          )}
+          <ReviewerAvatar
+            item={item}
+            imgClassName={`h-full w-full rounded-full object-cover ring-2 transition-[ring-color] duration-500 ${
+              isActive ? "ring-primary/70" : "ring-border group-hover:ring-primary/40"
+            }`}
+            fallbackClassName={`flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br ${item.avatarBg} ring-2 transition-[ring-color] duration-500 ${
+              isActive ? "ring-primary/70" : "ring-border group-hover:ring-primary/40"
+            }`}
+            initialsClassName={`text-2xl font-bold tracking-wide text-white transition-transform duration-500 ${
+              isActive ? "" : "group-hover:scale-105"
+            }`}
+          />
         </button>
 
         <motion.div
@@ -393,22 +417,12 @@ export const Testimonials: React.FC = () => {
                   </blockquote>
 
                   <figcaption className="mt-8 flex items-center gap-4">
-                    {active.imageSrc ? (
-                      <img
-                        src={active.imageSrc}
-                        alt=""
-                        loading="lazy"
-        decoding="async"
-                        className="h-12 w-12 shrink-0 rounded-full object-cover ring-2 ring-primary/25"
-                      />
-                    ) : (
-                      <div
-                        aria-hidden="true"
-                        className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${active.avatarBg} text-sm font-bold tracking-wide text-white ring-2 ring-primary/25`}
-                      >
-                        {initialsOf(active.name)}
-                      </div>
-                    )}
+                    <ReviewerAvatar
+                      item={active}
+                      imgClassName="h-12 w-12 shrink-0 rounded-full object-cover ring-2 ring-primary/25"
+                      fallbackClassName={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${active.avatarBg} ring-2 ring-primary/25`}
+                      initialsClassName="text-sm font-bold tracking-wide text-white"
+                    />
                     <div>
                       <p className="font-bold text-foreground">{active.name}</p>
                       <div className="mt-1 flex items-center gap-2">
